@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en">
+<head>
+<title> k-series-korea </title>
+<meta charset='UTF-8' />
+
+
+<link href="https://playtvthai.github.io/m3u8/css/bootstrap.css" rel='stylesheet' type='text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://playtvthai.github.io/m3u8/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/normalize.css">
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/custom.css">
+
+	
+<!-- Styles of Puerto Responsive Flat Buttons -->
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/main.css">
+	
+<!-- Font awesome -->
+<link rel="stylesheet" href="http://hdtvdd.com/work/assets_remark/fonts/font-awesome/font-awesome.min.css">
+
+<!-- start plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://playtvthai.github.io/m3u8/js/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel='stylesheet' type='text/css">
+
+<script src="https://playtvthai.github.io/m3u8/js/jquery.backstretch.js"></script>
+<script src="http://hdtvdd.com/work/bootstrap-login-forms/form-2/assets/js/scripts.js"></script>
+<style type="text/css">
+
+.overlay {
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(255,255,255,0);
+}
+
+.overlay-flag {
+    position:absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align:right;
+	background-color:rgba(255,255,255,0);
+
+}
+
+
+.overlay2 {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(0,0,0,0.5);
+	height:60px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	width:100%;
+	margin-left:0px;
+	margin-top:35px;
+}
+.login_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.live_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.login_txt {
+	border: #0A0A0A;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	width:150px;
+    margin-top: -6px;
+
+}
+
+input:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px
+}
+
+button:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+}
+
+a:focus img{
+	outline: none !important;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+
+}
+
+.box-flag {
+	border: 0px;
+	background-color: rgba(255,255,255,0.0);
+	display: inline-block;
+}
+
+
+
+</style>
+<link rel="stylesheet" href="http://hdtvdd.com/work/font/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/8k.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/overlay.css" type="text/css" charset="utf-8">
+<link href="http://hdtvdd.com/work/css/theme.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <style>
+  .modal-header {
+    background-color: #111;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+  
+.group {
+  margin-bottom: 30px;
+}
+.group label {
+  font-size: 24px;
+}
+.group2 label {
+  font-size: 20px;
+}
+  
+  input[type='text'] { font-size: 24px; }
+  
+  </style>
+
+
+
+
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn2").click(function(){
+    $("#myModal2").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_vip").click(function(){
+    $("#myModal_vip").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_cpass").click(function(){
+    $("#myModal_changepass").modal();
+  });
+});
+</script>
+
+<style type="text/css">
+.footer 
+{
+    text-align: center;
+    position : absolute;
+    bottom : -20;
+    width:99%;
+    height : 56px;
+    margin-top : 50px;
+  }
+</style>
+</header>
+	
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>       
+
+
+										
+  <div class="container" style="background-color:rgba(0,0,0,0.0); height:100%;">
+     <div class="container_wrap">
+     	<div class="row" style="background-color:#27282c;border-radius:5px">
+        	<div class="col-lg-12 col-md-12 col-xs-12" style="margin-top:10px;margin-bottom:10px;">
+            	<div class="row" >
+			<div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
+				<div class="logo">
+				</div>
+			</div>
+
+
+		<div class="col-lg-10 col-md-12 col-xs-12">
+		<div class="col-lg-12 col-md-12 col-xs-12" align="left" style="padding-top:0px;padding-bottom:5px;padding-left:5px;padding-right:5px">
+            <form class="form-inline">
+                <div class="form-group" style="margin:5px;">
+
+                
+					<form action="" method="get" name="lange">
+						<input name="lange" type="hidden" id="lange" value="en">
+						<input type="image" src="/web/images/en.gif" name="submit" width="30" height="2%" alt="submit"/>
+					</form>	
+
+
+	<!--div class="form-group"-->
+	<label for="form-password"><font color='white">ชื่อ :  </font><font color='yellow">[ ผู้เฒ่าพเนจร ™ ]</font></label>
+	<!--/div-->
+
+										
+    <button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:digital'"></i> 🏠 Home ™ </button>
+                   
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:live'"></i> 📡 ถ่ายทอดสด ™</button>
+	
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-serie'"></i> 🎞️ ดูซีรี่ย์ ™ </button>
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>🎥 ดูหนัง ™  </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>📽️ ดูสารคดี ™ </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='http://action_exit'"></i>🚪 ออก</button>					
+
+
+
+-------------------------------------------------------------------------------------------------
+
+
+        <div class="col-lg-9 col-md-9 col-xs-9" style="width:135%;padding-left:0px;padding-right:0px;">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+
+  
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/01e1a510-4b78-47b9-8a30-78b317d35deb/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP1 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/b7614271-178c-48ab-8ea5-9a306d10290b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP2 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6b00f936-a9aa-4ed9-bc95-7f879affbb6b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP3 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9d2e9c3b-de3b-4137-b2b8-62cbfe6c8724/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP4 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/52c318ae-9edf-4704-b315-3ecb221e8c45/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP5 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a7ce71c7-3aef-45ae-921c-384e76990d26/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP6 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/1a2ba6ee-41c3-4c82-a09b-2e6c2ca50cf5/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP7 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/04324f7b-3b8c-4e5d-ba90-b81f167b028c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP8 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0c0e25bc-93c8-4f4e-9f5e-e9d49326db30/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP9 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/dc0eccc1-a148-4665-8bf9-49f840e14cce/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP10 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6e61575a-a41a-40ea-8dba-9103d1d722fe/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP11 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0068f985-9dd8-4742-bc30-696aebcdccf6/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP12 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/2aedd414-802a-40ca-abee-7bf10f26e7b7/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP13 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/914aeee6-d76d-4381-ad69-87c457d13815/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP14 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/564a632f-e452-4489-8464-83350140da17/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP15 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/1d172ee9-52db-4516-8fed-9be35040467e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP16 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a57bfab1-efd3-4274-81b3-9dbaa5b7503f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP17 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/718432bc-f023-42b4-afe1-b6f2b3dda957/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP18 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/27514639-5457-4123-baf9-78692d9c12c4/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP19 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9de7a810-84d8-4b72-9225-54feb56ef9ff/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP20 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f5cb9108-6ee4-4c45-bb6d-8d9344890705/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP21 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/cfaed280-756a-4fba-bf19-6aa65acaff1c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP22 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/524c527f-e500-477d-9853-0abdb405cc53/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP23 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/Female-Special-Police-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7d3a4b36-5d59-4123-a7af-cef2f178c8ba/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Female Special Police(จบ)EP24 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/aaf687df-7532-49fb-9003-70c05de59067/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP1 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7bf62e00-a4d0-49f4-91fa-23c2db1b22fa/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP2 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e791238b-da48-4fcd-a22a-b1f3b4abcf14/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP3 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4f2cf1ba-353d-49cf-ab1e-3b8dfd9a2a3b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP4 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/54511039-e2c1-4de1-a026-80af4f291b6b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP5 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ba171e74-af8b-4da7-a478-6f0d9fa999a4/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP6 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/920954e6-0445-481c-b0b3-89fcce1ffc21/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP7 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9711f03e-31d6-4a48-ba43-29f35888ef2b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP8 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/bd3291f3-8751-4ffa-a9b6-32b332145c9c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP9 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9ed3534b-4f58-4ec1-a973-e4c6f551bd50/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP10 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/2e4f611b-bf85-4d54-80ed-35b46e086acf/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP11 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/13cdfbc1-7d1a-40c2-bf01-e87c804f84dc/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP12 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/35463820-bb74-43cf-81dc-6a3caad5fe55/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP13 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/50041918-ea70-4735-8550-6adc379c0bbc/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP14 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4e6c25a0-9dfa-4675-a4d6-c0c34ec8c252/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP15 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7da6920c-4eea-4ed9-8c41-392279c307ed/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP16 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e63d1ab2-a2fe-4773-af90-854d67b8e71d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP17 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/23d723aa-29f3-4836-8960-cc62b82bbe38/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP18 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/89e872fb-656c-4cdd-8cfc-1910f1c088d1/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP19 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a92844b1-1f3e-40ad-a281-68c924e6d741/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP20 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7fd39232-cb05-4350-aaa1-ada4407d3e91/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP21 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e7345bf8-6a9b-4ff6-992d-15c3060b6400/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP22 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6b61732c-2531-45f5-bcf1-c26735eae348/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP23 (SUB)</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/My-Boyfriend-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/930441e9-b0f4-4b24-a1f0-ee32a9c7741b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ตกหลุมรักพ่อบ้านกำมะลอ(จบ)EP24 (SUB)</p></center>
+</div>
+                                                                                                                          
+
+
+ 
+
+<div class="col-lg-12 col-md-12 col-xs-12">
+	<div class="example" align="center">
+		<nav>
+			<ul class="pagination">
+				<li><a href="go:main-fw" aria-label="Previous"><span aria-hidden="true"><< หน้าแรก</span></a></li>		
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (31).html'>31</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (32).html'>32</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (33).html'>33</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (34).html'>34</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (35).html'>35</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (36).html'>36</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (37).html'>37</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (38).html'>38</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (39).html'>39</a></li>
+		 				 <li class="active"><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (40).html'><b>40</b></a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (41).html'>หน้าถัดไป</a></li>
+						<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (50).html'>  หน้าสุดท้าย» </a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+
+</div>
+</div>
+</div>  
+</div> 
+</div>
+</div>
+</div>

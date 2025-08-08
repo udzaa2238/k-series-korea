@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en'>
+<head>
+<title> k-series-korea-20 </title>
+<meta charset='UTF-8' />
+
+
+<link href="https://playtvthai.github.io/m3u8/css/bootstrap.css" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://playtvthai.github.io/m3u8/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/normalize.css">
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/custom.css">
+
+	
+<!-- Styles of Puerto Responsive Flat Buttons -->
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/main.css">
+	
+<!-- Font awesome -->
+<link rel="stylesheet" href="http://hdtvdd.com/work/assets_remark/fonts/font-awesome/font-awesome.min.css">
+
+<!-- start plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://playtvthai.github.io/m3u8/js/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel='stylesheet' type='text/css'>
+
+<script src="https://playtvthai.github.io/m3u8/js/jquery.backstretch.js"></script>
+<script src="http://hdtvdd.com/work/bootstrap-login-forms/form-2/assets/js/scripts.js"></script>
+<style type="text/css">
+
+.overlay {
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(255,255,255,0);
+}
+
+.overlay-flag {
+    position:absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align:right;
+	background-color:rgba(255,255,255,0);
+
+}
+
+
+.overlay2 {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(0,0,0,0.5);
+	height:60px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	width:100%;
+	margin-left:0px;
+	margin-top:35px;
+}
+.login_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.live_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.login_txt {
+	border: #0A0A0A;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	width:150px;
+    margin-top: -6px;
+
+}
+
+input:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px
+}
+
+button:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+}
+
+a:focus img{
+	outline: none !important;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+
+}
+
+.box-flag {
+	border: 0px;
+	background-color: rgba(255,255,255,0.0);
+	display: inline-block;
+}
+
+
+
+</style>
+<link rel="stylesheet" href="http://hdtvdd.com/work/font/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/8k.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/overlay.css" type="text/css" charset="utf-8">
+<link href="http://hdtvdd.com/work/css/theme.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <style>
+  .modal-header {
+    background-color: #111;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+  
+.group {
+  margin-bottom: 30px;
+}
+.group label {
+  font-size: 24px;
+}
+.group2 label {
+  font-size: 20px;
+}
+  
+  input[type='text'] { font-size: 24px; }
+  
+  </style>
+
+
+
+
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn2").click(function(){
+    $("#myModal2").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_vip").click(function(){
+    $("#myModal_vip").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_cpass").click(function(){
+    $("#myModal_changepass").modal();
+  });
+});
+</script>
+
+<style type="text/css">
+.footer 
+{
+    text-align: center;
+    position : absolute;
+    bottom : -20;
+    width:99%;
+    height : 56px;
+    margin-top : 50px;
+  }
+</style>
+</header>
+	
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>       
+
+
+										
+  <div class="container" style="background-color:rgba(0,0,0,0.0); height:100%;">
+     <div class="container_wrap">
+     	<div class="row" style="background-color:#27282c;border-radius:5px">
+        	<div class="col-lg-12 col-md-12 col-xs-12" style="margin-top:10px;margin-bottom:10px;">
+            	<div class="row" >
+			<div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
+				<div class="logo">
+				</div>
+			</div>
+
+
+		<div class="col-lg-10 col-md-12 col-xs-12">
+		<div class="col-lg-12 col-md-12 col-xs-12" align="left" style="padding-top:0px;padding-bottom:5px;padding-left:5px;padding-right:5px">
+            <form class="form-inline">
+                <div class="form-group" style="margin:5px;">
+
+                
+					<form action="" method="get" name="lange">
+						<input name="lange" type="hidden" id="lange" value="en">
+						<input type="image" src="/web/images/en.gif" name="submit" width="30" height="2%" alt="submit"/>
+					</form>	
+
+
+	<!--div class="form-group"-->
+	<label for="form-password"><font color='white'>ชื่อ :  </font><font color='yellow'>[ ผู้เฒ่าพเนจร ™ ]</font></label>
+	<!--/div-->
+
+										
+    <button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:digital'"></i> 🏠 Home ™ </button>
+                   
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:live'"></i> 📡 ถ่ายทอดสด ™</button>
+	
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-serie'"></i> 🎞️ ดูซีรี่ย์ ™ </button>
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>🎥 ดูหนัง ™  </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>📽️ ดูสารคดี ™ </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='http://action_exit'"></i>🚪 ออก</button>					
+
+
+
+------------------------------------------------------------------------------------------
+
+
+        <div class="col-lg-9 col-md-9 col-xs-9" style="width:135%;padding-left:0px;padding-right:0px;">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4fd80e65-0cdd-4f30-ab86-6c53e80287ac/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP1(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/959d5bd4-f0b4-40a7-9c98-54affaf9dd1d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP2(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ffc321bc-73f6-4e4b-b807-177e996e4f1d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP3(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9d98ac44-2c35-4ede-a5ab-c6dd2af1c51a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP4(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/eca5fb45-5acd-48ee-9261-33ba137c4391/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP5(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/10fb2582-a2da-4130-a4fc-3ab3dc3a8d8a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP6(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f6362f2f-6a29-4a2c-9f09-a905ade30177/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP7(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c6a258d9-6465-4e1c-833e-8ef0ef67fd05/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP8(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/fb20bb67-380a-44f3-83d6-c34c082741c6/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP9(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/2c856142-a6cc-4989-b190-a1c8c1dd4e23/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP10(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/8d122b63-02a5-4503-965d-ea4a9b06056a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP11(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9a1c74ea-86da-4a6b-a097-0d53bfb918ef/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP12(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/5e309e6f-3a88-49fc-a9ba-f068f01207f7/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP13(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9b206847-7914-4a35-aba2-6eb25586a150/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP14(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/d38f9e60-3cdc-4769-b78e-c892c9d43257/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP15(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e092113b-8457-4eff-a73f-dfeb9394f425/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP16(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/340d54c4-7bd4-42eb-aa17-6dac9f1290b8/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP17(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/b949767c-20d1-47b3-8bc6-c9fc6c84a305/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP18(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7aeaf57a-75b6-4d3f-bf76-40e853edc988/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP19(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c1c5f42e-4853-4443-b905-6ee4dcbb6130/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP20(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/476b094b-ff72-4d48-bcf5-85a6f07ed342/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP21(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7228556e-7400-4759-8f19-61e56d280ca7/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP22(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/df828107-dfc6-4435-91b6-830cd9236ec9/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP23(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Dear-Enemy-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/75f1a377-fe42-464b-b964-0ff7c665406a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">คู่รักคู่แค้น(จบ)EP24(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/2a07dd5f-87a0-4fd5-9156-c2688c1ae79f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP1(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/88aafa3c-3e35-45ed-8b24-519345f38b43/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP2(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a959c9e0-0515-4c46-850d-7b67e536de54/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP3(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/fa545f87-265e-4038-b624-ae336d7d16d1/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP4(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4c8f4db1-618a-4dee-b8ae-a71dd829a78f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP5(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/52b1c8a6-7ead-4596-98f4-3298d7cd44f0/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP6(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/3e794078-f540-4d17-9b8f-d8ed15b2cc09/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP7(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e4552416-1e00-441b-94ef-667562e36940/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP8(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/d235b1ba-4712-46ba-bed8-7ec9b011fed3/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP9(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f0160015-fe3d-4f2a-837e-2bd8f8c1ffde/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP10(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a81945df-bc96-46b2-ad86-d9fd973c41e1/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP11(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7c3396ff-52e7-429f-b071-d57478c6ca3b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP12(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7fb849e8-9bfe-49cc-97ef-26894548ce28/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP13(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/d80464d3-8717-413e-9110-3cdd07e13deb/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP14(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/58591d11-ae78-46de-bba6-56bd9be8e0ee/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP15(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/36e4c5e7-60f6-4061-a6b8-81f85931043e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP16(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/d21133c8-ccae-40af-b29e-f4cebe63ec73/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP17(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4bc48d28-8b94-41d8-8138-c9748e9b56c6/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP18(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7d3b8215-7796-4492-a75e-1fc1341be50d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP19(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/2784d429-7a12-42e1-871b-293c0db37a6a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP20(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/58b548d0-2261-46aa-a8e8-22c9b03e7c6a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP21(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/68aa2cdd-b56e-48ac-b146-7abd038f3295/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP22(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6b9a8bbe-088e-4f95-967b-d21187a45d14/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP23(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Madam-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f7a177ce-d8c8-4a23-9a29-1d5404e0a2a1/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฉันนี่แหละฮูหยินอันดับหนึ่ง(จบ) EP24(SUB)
+</p></center>
+</div>
+              
+
+ 
+
+<div class="col-lg-12 col-md-12 col-xs-12">
+	<div class="example" align="center">
+		<nav>
+			<ul class="pagination">
+				<li><a href="go:main-fw" aria-label="กลับหน้าแรก"><span aria-hidden="true"><< หน้าหลัก</span></a></li>		
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (11).html'>11</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (12).html'>12</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (13).html'>13</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (14).html'>14</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (15).html'>15</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (16).html'>16</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (17).html'>17</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (18).html'>18</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (19).html'>19</a></li>
+					     <li class="active"><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (20).html'><b>20</b></a></li>
+						 		 		<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (21).html'>21</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (21).html'>หน้าต่อไป»</a></li>
+						<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (50).html'>  หน้าสุดท้าย» </a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+</div>
+</div>
+</div>  
+</div> 
+</div>
+</div>
+</div>

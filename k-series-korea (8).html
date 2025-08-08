@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en'>
+<head>
+<title> k-series-korea-8 </title>
+<meta charset='UTF-8' />
+
+
+<link href="https://playtvthai.github.io/m3u8/css/bootstrap.css" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://playtvthai.github.io/m3u8/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/normalize.css">
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/custom.css">
+
+	
+<!-- Styles of Puerto Responsive Flat Buttons -->
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/main.css">
+	
+<!-- Font awesome -->
+<link rel="stylesheet" href="http://hdtvdd.com/work/assets_remark/fonts/font-awesome/font-awesome.min.css">
+
+<!-- start plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://playtvthai.github.io/m3u8/js/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel='stylesheet' type='text/css'>
+
+<script src="https://playtvthai.github.io/m3u8/js/jquery.backstretch.js"></script>
+<script src="http://hdtvdd.com/work/bootstrap-login-forms/form-2/assets/js/scripts.js"></script>
+<style type="text/css">
+
+.overlay {
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(255,255,255,0);
+}
+
+.overlay-flag {
+    position:absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align:right;
+	background-color:rgba(255,255,255,0);
+
+}
+
+
+.overlay2 {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(0,0,0,0.5);
+	height:60px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	width:100%;
+	margin-left:0px;
+	margin-top:35px;
+}
+.login_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.live_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.login_txt {
+	border: #0A0A0A;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	width:150px;
+    margin-top: -6px;
+
+}
+
+input:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px
+}
+
+button:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+}
+
+a:focus img{
+	outline: none !important;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+
+}
+
+.box-flag {
+	border: 0px;
+	background-color: rgba(255,255,255,0.0);
+	display: inline-block;
+}
+
+
+
+</style>
+<link rel="stylesheet" href="http://hdtvdd.com/work/font/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/8k.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/overlay.css" type="text/css" charset="utf-8">
+<link href="http://hdtvdd.com/work/css/theme.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <style>
+  .modal-header {
+    background-color: #111;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+  
+.group {
+  margin-bottom: 30px;
+}
+.group label {
+  font-size: 24px;
+}
+.group2 label {
+  font-size: 20px;
+}
+  
+  input[type='text'] { font-size: 24px; }
+  
+  </style>
+
+
+
+
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn2").click(function(){
+    $("#myModal2").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_vip").click(function(){
+    $("#myModal_vip").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_cpass").click(function(){
+    $("#myModal_changepass").modal();
+  });
+});
+</script>
+
+<style type="text/css">
+.footer 
+{
+    text-align: center;
+    position : absolute;
+    bottom : -20;
+    width:99%;
+    height : 56px;
+    margin-top : 50px;
+  }
+</style>
+</header>
+	
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>       
+
+
+										
+  <div class="container" style="background-color:rgba(0,0,0,0.0); height:100%;">
+     <div class="container_wrap">
+     	<div class="row" style="background-color:#27282c;border-radius:5px">
+        	<div class="col-lg-12 col-md-12 col-xs-12" style="margin-top:10px;margin-bottom:10px;">
+            	<div class="row" >
+			<div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
+				<div class="logo">
+				</div>
+			</div>
+
+
+		<div class="col-lg-10 col-md-12 col-xs-12">
+		<div class="col-lg-12 col-md-12 col-xs-12" align="left" style="padding-top:0px;padding-bottom:5px;padding-left:5px;padding-right:5px">
+            <form class="form-inline">
+                <div class="form-group" style="margin:5px;">
+
+                
+					<form action="" method="get" name="lange">
+						<input name="lange" type="hidden" id="lange" value="en">
+						<input type="image" src="/web/images/en.gif" name="submit" width="30" height="2%" alt="submit"/>
+					</form>	
+
+
+	<!--div class="form-group"-->
+	<label for="form-password"><font color='white'>ชื่อ :  </font><font color='yellow'>[ ผู้เฒ่าพเนจร ™ ]</font></label>
+	<!--/div-->
+
+										
+    <button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:digital'"></i> 🏠 Home ™ </button>
+                   
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:live'"></i> 📡 ถ่ายทอดสด ™</button>
+	
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-serie'"></i> 🎞️ ดูซีรี่ย์ ™ </button>
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>🎥 ดูหนัง ™  </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>📽️ ดูสารคดี ™ </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='http://action_exit'"></i>🚪 ออก</button>					
+
+
+
+------------------------------------------------------------------------------------------
+
+
+        <div class="col-lg-9 col-md-9 col-xs-9" style="width:135%;padding-left:0px;padding-right:0px;">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+
+  
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/5a1fbc2d-a533-4691-a5fe-f3f6bfd0fbb3/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP1 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7d22731f-2403-4852-81e1-5aa325d483db/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP2 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4521e8cb-7490-4c30-8e2e-fc97e670dc96/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP3 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/cc20a52e-bdbe-469c-a260-8822abd40f9d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP4 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/15ee979d-4cab-47f9-b272-26c1f5aa8a86/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP5 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/8558bf7f-34fa-4bdd-b035-d88e30e9c554/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP6 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/84f8ff4c-73ca-4642-8c0d-ef102293a0a4/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP7 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/29b5580d-7035-4b0c-a4d9-f21d4bae58d3/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP8 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/26e7c1a3-5616-44db-b6ed-4d9db8d85abe/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP9 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/b9f1a0d2-f7ab-499a-bda9-5d3b20be4134/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP10 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/fe14d95d-d8c2-48c8-834f-8610201c74e6/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP11 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/510fac83-4245-4fde-b324-fe6761c8ec31/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP12 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/91997faf-bc48-4305-ad18-9844c6de5006/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP13 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e9b84800-f057-4177-92d0-580c14a794a3/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP14 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4e15ce84-4aec-4835-ae74-81033dc4216d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP15 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/12f1a76b-ed9d-4e75-9514-2d718772d6d9/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP16 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/cd4cdcef-7a03-4404-9027-b1731d5587e3/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP17 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c1bab2bd-b7a7-455e-a641-ca51bf249352/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP18 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/03eb7509-06c8-42dd-83bc-af5b48f37d10/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP19 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f2a0a0be-978c-4fc6-8026-f295ecc142cb/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP20 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ce8b00ac-a2cc-4a4c-88fc-6f2b17e31f68/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP21 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/909d24a3-2f93-4ba0-8bb5-b7562b18ec88/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP22 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/b3608e9d-b198-4dd7-8967-10efc6f7d76b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP23 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/221e896e-1645-477f-840f-7216dc264353/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP24 (TH)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7a9673fb-452a-4b9f-9fe7-070e6943ceed/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP1(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/b405c1f0-794a-4168-8c8e-2414a546a2da/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP2(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/86381950-c619-4b75-8394-145cedbe72b2/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP3(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ea072657-046e-46c6-9bdd-2fe1b9e1f61f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP4(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/2463a47b-8207-4d0f-bba6-5b1dba878e3b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP5(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/01079f3e-a16e-4042-80be-f6801325d321/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP6(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/54407e53-65cc-4ed0-8a29-865fcfed5d30/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP7(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/3e80b7f2-350c-4be5-b9c6-30373fe9961c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP8(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/01741b47-90cc-400d-95a2-9f65ceed2f60/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP9(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/aa457be7-62fe-4e85-a736-f4a2b0abde2e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP10(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/123b775d-e756-4f2a-87ea-6a2216cd2088/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP11(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6c49fe39-91bc-45ba-979a-5674d469beeb/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP12(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4c67f7d0-5336-42b7-af9c-20225c02d2df/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP13(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/3bcffc3b-5fb8-4d35-bde7-cec8a91fb7e2/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP14(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ea0f6725-2693-4585-a004-bf6c2d026378/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP15(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f77483a0-bebd-4b02-b698-7146a73c769f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP16(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/865ff723-6b7e-441f-b9e9-dfaa30477194/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP17(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/003eb614-5dc7-4741-9653-800982c483a5/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP18(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c4a3a75a-3270-4eef-bce6-c9dbc1931b68/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP19(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0d54e22e-f4cd-4e29-b59c-f068b5016ca7/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP20(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/1152c4bd-5ba3-4cd1-b753-57b488c9a974/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP21(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/04f9f13a-f1be-47b2-afb0-f6264a1beb1e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP22(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/17632311-2494-41a6-b061-b1c2b695a77f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP23(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2024/02/Eternal-Brotherhood-2024.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/77786fac-e7f9-43e7-aefb-8e4f05807bc9/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 1(จบ)EP24(SUB)
+</p></center>
+</div>
+
+
+                
+ 
+
+<div class="col-lg-12 col-md-12 col-xs-12">
+	<div class="example" align="center">
+		<nav>
+			<ul class="pagination">
+				<li><a href="go:main-fw" aria-label="กลับหน้าแรก"><span aria-hidden="true"><< หน้าหลัก</span></a></li>		
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (1).html'>1</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (2).html'>2</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (3).html'>3</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (4).html'>4</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (5).html'>5</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (6).html'>6</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (7).html'>7</a></li>
+		 				 <li class="active"><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (8).html'><b>8</b></a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (9).html'>9</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (1).html0'>10</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (9).html'>หน้าต่อไป»</a></li>
+						<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (50).html'>  หน้าสุดท้าย» </a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+
+</div>
+</div>
+</div>  
+</div> 
+</div>
+</div>
+</div>

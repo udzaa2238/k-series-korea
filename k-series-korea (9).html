@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en'>
+<head>
+<title> k-series-korea-9 </title>
+<meta charset='UTF-8' />
+
+
+<link href="https://playtvthai.github.io/m3u8/css/bootstrap.css" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://playtvthai.github.io/m3u8/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/normalize.css">
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/custom.css">
+
+	
+<!-- Styles of Puerto Responsive Flat Buttons -->
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/main.css">
+	
+<!-- Font awesome -->
+<link rel="stylesheet" href="http://hdtvdd.com/work/assets_remark/fonts/font-awesome/font-awesome.min.css">
+
+<!-- start plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://playtvthai.github.io/m3u8/js/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel='stylesheet' type='text/css'>
+
+<script src="https://playtvthai.github.io/m3u8/js/jquery.backstretch.js"></script>
+<script src="http://hdtvdd.com/work/bootstrap-login-forms/form-2/assets/js/scripts.js"></script>
+<style type="text/css">
+
+.overlay {
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(255,255,255,0);
+}
+
+.overlay-flag {
+    position:absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align:right;
+	background-color:rgba(255,255,255,0);
+
+}
+
+
+.overlay2 {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(0,0,0,0.5);
+	height:60px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	width:100%;
+	margin-left:0px;
+	margin-top:35px;
+}
+.login_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.live_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.login_txt {
+	border: #0A0A0A;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	width:150px;
+    margin-top: -6px;
+
+}
+
+input:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px
+}
+
+button:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+}
+
+a:focus img{
+	outline: none !important;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+
+}
+
+.box-flag {
+	border: 0px;
+	background-color: rgba(255,255,255,0.0);
+	display: inline-block;
+}
+
+
+
+</style>
+<link rel="stylesheet" href="http://hdtvdd.com/work/font/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/8k.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/overlay.css" type="text/css" charset="utf-8">
+<link href="http://hdtvdd.com/work/css/theme.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <style>
+  .modal-header {
+    background-color: #111;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+  
+.group {
+  margin-bottom: 30px;
+}
+.group label {
+  font-size: 24px;
+}
+.group2 label {
+  font-size: 20px;
+}
+  
+  input[type='text'] { font-size: 24px; }
+  
+  </style>
+
+
+
+
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn2").click(function(){
+    $("#myModal2").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_vip").click(function(){
+    $("#myModal_vip").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_cpass").click(function(){
+    $("#myModal_changepass").modal();
+  });
+});
+</script>
+
+<style type="text/css">
+.footer 
+{
+    text-align: center;
+    position : absolute;
+    bottom : -20;
+    width:99%;
+    height : 56px;
+    margin-top : 50px;
+  }
+</style>
+</header>
+	
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>       
+
+
+										
+  <div class="container" style="background-color:rgba(0,0,0,0.0); height:100%;">
+     <div class="container_wrap">
+     	<div class="row" style="background-color:#27282c;border-radius:5px">
+        	<div class="col-lg-12 col-md-12 col-xs-12" style="margin-top:10px;margin-bottom:10px;">
+            	<div class="row" >
+			<div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
+				<div class="logo">
+				</div>
+			</div>
+
+
+		<div class="col-lg-10 col-md-12 col-xs-12">
+		<div class="col-lg-12 col-md-12 col-xs-12" align="left" style="padding-top:0px;padding-bottom:5px;padding-left:5px;padding-right:5px">
+            <form class="form-inline">
+                <div class="form-group" style="margin:5px;">
+
+                
+					<form action="" method="get" name="lange">
+						<input name="lange" type="hidden" id="lange" value="en">
+						<input type="image" src="/web/images/en.gif" name="submit" width="30" height="2%" alt="submit"/>
+					</form>	
+
+
+	<!--div class="form-group"-->
+	<label for="form-password"><font color='white'>ชื่อ :  </font><font color='yellow'>[ ผู้เฒ่าพเนจร ™ ]</font></label>
+	<!--/div-->
+
+										
+    <button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:digital'"></i> 🏠 Home ™ </button>
+                   
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:live'"></i> 📡 ถ่ายทอดสด ™</button>
+	
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-serie'"></i> 🎞️ ดูซีรี่ย์ ™ </button>
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>🎥 ดูหนัง ™  </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>📽️ ดูสารคดี ™ </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='http://action_exit'"></i>🚪 ออก</button>					
+
+
+
+------------------------------------------------------------------------------------------
+
+
+        <div class="col-lg-9 col-md-9 col-xs-9" style="width:135%;padding-left:0px;padding-right:0px;">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+
+ 
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/27ebbc58-d718-4138-ad78-dd387d657545/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP1(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/854096d9-6bfe-40c3-b376-3598d9902cd2/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP2(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/bd6d4bcb-579c-49b1-9f7d-29981b755c5b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP3(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/8bec2cd4-ef91-428e-8905-12b6bd013f74/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP4(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/36083ddb-e880-4a31-9127-84ccb74615e8/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP5(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/438179f7-b083-45c5-97b6-1cdc4217047e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP6(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0fbf1fd9-eeb3-48cf-9503-cce6d7ca3527/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP7(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/14840bf1-1519-45cb-853d-d8e0f2f778ef/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP8(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/24a2f782-796c-486a-8660-5eaa7e6ae6e7/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP9(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/68e408af-e0df-4c1d-b811-abe00a3bcc52/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP10(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ff07b5fc-355c-445f-a871-6e2b23deef71/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP11(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/385cb76e-d9cc-41ac-8a80-66cd264959d9/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP12(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a2d0c5d0-b36e-4944-95a4-fe39175f5df9/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP13(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/bde43126-b08e-4ad6-9217-3f9f9539f477/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP14(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/9fa804dd-0756-46bd-882e-c3314aa0fd02/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP15(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/d02d0660-08f6-4544-bf4b-756e904a0b7b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP16(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f73b9a23-cb0f-473d-af0c-3f5daaf56f6c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP17(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/45e14755-55cb-4547-ac5f-a7e54dd7834e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP18(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/178f7059-7bca-458e-95a1-e28b9a79dac8/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP19(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0b004bad-289c-4fa5-bfda-544b82b8dffe/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP20(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/5363a9c0-1730-4247-8f2d-f41b1ca445b5/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP21(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/8ba2f428-378f-4d2f-a915-407857d59088/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP22(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a31ea168-8b13-43d9-abef-622a31572749/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP23(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/06/Eternal-Brotherhood-2-2025-e1748844530337.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/95b2fdfc-becc-4dfd-9ab7-fc8c2069eb76/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">Eternal Brotherhood 2(จบ)่ EP24(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/43d90860-cc6e-443d-957b-47e7341c790f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP1(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f2ce81e7-5ecc-4564-a201-155a2401ff9f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP2(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/52a099f4-d19a-4d56-88a5-435ac8142ac3/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP3(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/d25d337f-84c0-4404-b37e-a4ce1dc7b8ef/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP4(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/a0f46e85-63c1-4f65-a816-d08de2fbc099/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP5(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/b52b3ee2-e8b0-4e76-81a3-4484b571fe10/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP6(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/83adb9f1-55e5-46d6-b573-261cb6d29979/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP7(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f1d41708-b901-4ef5-b64c-4f7392d674df/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP8(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/29fde7b5-f7a5-40fb-8fc0-345a32714cca/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP9(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/5f55d359-e2c0-4727-b4e1-902ec377cfa8/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP10(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/7054bfef-f83c-43a1-aff2-b307eb49de41/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP11(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/d67286ef-288a-48bb-91f3-cf2a1fbd815e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP12(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/2328d02d-3eac-4f72-b6ed-52a2c9275375/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP13(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/67eabcf1-96ff-46df-8404-099a6f7b9b1d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP14(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/24dd724c-edda-449d-a41f-c0d8101f5daf/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP15(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/1425dcc2-a1f1-45e9-921f-8f6576212bbb/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP16(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6e9029a4-0ba8-42c7-b982-034e005d2283/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP17(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/959f591e-a04c-4240-b0f0-1e51a3d4fc28/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP18(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/13285143-9a27-4da3-94a8-42a28acf7e15/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP19(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/135c5389-d9e4-4f6b-b579-c513f396866d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP20(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6c734c50-bf13-4485-8ecc-705dfa31655a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP21(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c5a2799d-66f4-41a5-9508-7a773aafda14/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP22(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/209f680f-3183-4335-953a-70d6b1108a85/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP23(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/05/Be-Yourself-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/67931210-7603-4c11-bec3-db1f1e654e7c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">ฝืนชะตาท้าเป็นเซียน(จบ)EP24(SUB)
+</p></center>
+</div>
+ 
+
+ 
+
+<div class="col-lg-12 col-md-12 col-xs-12">
+	<div class="example" align="center">
+		<nav>
+			<ul class="pagination">
+				<li><a href="go:main-fw" aria-label="กลับหน้าแรก"><span aria-hidden="true"><< หน้าหลัก</span></a></li>		
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (1).html'>1</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (2).html'>2</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (3).html'>3</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (4).html'>4</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (5).html'>5</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (6).html'>6</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (7).html'>7</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (8).html'>8</a></li>
+		 				 <li class="active"><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (9).html'><b>9</b></a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (10).html'>10</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (11).html'>หน้าต่อไป 11»</a></li>
+						<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (50).html'>  หน้าสุดท้าย» </a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+
+</div>
+</div>
+</div>  
+</div> 
+</div>
+</div>
+</div>

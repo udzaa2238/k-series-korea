@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en">
+<head>
+<title> k-series-korea-34 </title>
+<meta charset='UTF-8' />
+
+
+<link href="https://playtvthai.github.io/m3u8/css/bootstrap.css" rel='stylesheet' type='text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://playtvthai.github.io/m3u8/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/normalize.css">
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/custom.css">
+
+	
+<!-- Styles of Puerto Responsive Flat Buttons -->
+<link rel="stylesheet" href="https://playtvthai.github.io/m3u8/css/main.css">
+	
+<!-- Font awesome -->
+<link rel="stylesheet" href="http://hdtvdd.com/work/assets_remark/fonts/font-awesome/font-awesome.min.css">
+
+<!-- start plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://playtvthai.github.io/m3u8/js/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel='stylesheet' type='text/css">
+
+<script src="https://playtvthai.github.io/m3u8/js/jquery.backstretch.js"></script>
+<script src="http://hdtvdd.com/work/bootstrap-login-forms/form-2/assets/js/scripts.js"></script>
+<style type="text/css">
+
+.overlay {
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(255,255,255,0);
+}
+
+.overlay-flag {
+    position:absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align:right;
+	background-color:rgba(255,255,255,0);
+
+}
+
+
+.overlay2 {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    position:absolute;
+    text-align:left;
+	background-color:rgba(0,0,0,0.5);
+	height:60px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	width:100%;
+	margin-left:0px;
+	margin-top:35px;
+}
+.login_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.live_botton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+	border-radius: 4px;
+}
+
+.login_txt {
+	border: #0A0A0A;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	width:150px;
+    margin-top: -6px;
+
+}
+
+input:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px
+}
+
+button:focus {
+	outline: none !important;
+	border-color: #F7AA06;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+}
+
+a:focus img{
+	outline: none !important;
+	box-shadow: 0 0 0 5px #F7AA06;
+	border-radius: 2px;
+
+}
+
+.box-flag {
+	border: 0px;
+	background-color: rgba(255,255,255,0.0);
+	display: inline-block;
+}
+
+
+
+</style>
+<link rel="stylesheet" href="http://hdtvdd.com/work/font/stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/8k.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="http://hdtvdd.com/work/css/overlay.css" type="text/css" charset="utf-8">
+<link href="http://hdtvdd.com/work/css/theme.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <style>
+  .modal-header {
+    background-color: #111;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+  
+.group {
+  margin-bottom: 30px;
+}
+.group label {
+  font-size: 24px;
+}
+.group2 label {
+  font-size: 20px;
+}
+  
+  input[type='text'] { font-size: 24px; }
+  
+  </style>
+
+
+
+
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn2").click(function(){
+    $("#myModal2").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_vip").click(function(){
+    $("#myModal_vip").modal();
+  });
+});
+
+$(document).ready(function(){
+  $("#myBtn_cpass").click(function(){
+    $("#myModal_changepass").modal();
+  });
+});
+</script>
+
+<style type="text/css">
+.footer 
+{
+    text-align: center;
+    position : absolute;
+    bottom : -20;
+    width:99%;
+    height : 56px;
+    margin-top : 50px;
+  }
+</style>
+</header>
+	
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>       
+
+
+										
+  <div class="container" style="background-color:rgba(0,0,0,0.0); height:100%;">
+     <div class="container_wrap">
+     	<div class="row" style="background-color:#27282c;border-radius:5px">
+        	<div class="col-lg-12 col-md-12 col-xs-12" style="margin-top:10px;margin-bottom:10px;">
+            	<div class="row" >
+			<div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
+				<div class="logo">
+				</div>
+			</div>
+
+
+		<div class="col-lg-10 col-md-12 col-xs-12">
+		<div class="col-lg-12 col-md-12 col-xs-12" align="left" style="padding-top:0px;padding-bottom:5px;padding-left:5px;padding-right:5px">
+            <form class="form-inline">
+                <div class="form-group" style="margin:5px;">
+
+                
+					<form action="" method="get" name="lange">
+						<input name="lange" type="hidden" id="lange" value="en">
+						<input type="image" src="/web/images/en.gif" name="submit" width="30" height="2%" alt="submit"/>
+					</form>	
+
+
+	<!--div class="form-group"-->
+	<label for="form-password"><font color='white">ชื่อ :  </font><font color='yellow">[ ผู้เฒ่าพเนจร ™ ]</font></label>
+	<!--/div-->
+
+										
+    <button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:digital'"></i> 🏠 Home ™ </button>
+                   
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:live'"></i> 📡 ถ่ายทอดสด ™</button>
+	
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-serie'"></i> 🎞️ ดูซีรี่ย์ ™ </button>
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>🎥 ดูหนัง ™  </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='go:main-movie'"></i>📽️ ดูสารคดี ™ </button>					
+					
+	<button class="btn btn-default" type="button" style="background-color:transparent;border-radius:2px;border:0px;font-size:18px;color:#FFF;padding-left:5px;padding-right:5px;font-family: 'rsuregular';" onclick="window.location.href='http://action_exit'"></i>🚪 ออก</button>					
+
+
+
+------------------------------------------------------------------------------------------
+
+
+        <div class="col-lg-9 col-md-9 col-xs-9" style="width:135%;padding-left:0px;padding-right:0px;">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+
+
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/5870f93e-ff41-47b9-8c24-d6b89dc39d9a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP1(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/21dd40c2-da57-4b06-8312-71270091fb0c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP2(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/da5ad316-0e01-4ca1-bf06-a12a29bcf64e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP3(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/048bcc21-91ae-4a2f-b5d4-c3104167c37f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP4(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/75474510-8620-42f8-9539-39f42557f792/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP5(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ad31039a-ba1f-44fc-a20e-cf447e029d44/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP6(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/3beb0b5b-78e7-4d83-ab5b-d9292617317c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP7(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e788580f-7b2c-419a-bc1c-93c21e994650/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP8(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6a52a16a-32fe-48e5-8e51-894750b32e1a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP9(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/34625f45-9e48-41a1-bab4-3a7e0633167b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP10(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0f89c547-ca9c-4c48-967a-76498c24e4a7/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP11(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/309a3bda-3ec7-4393-9549-21ca03efd890/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP12(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0d73eee3-4e5e-4a80-9766-c0abc4630868/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP13(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/480805bc-f1f2-44a3-b7a2-537f498cac18/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP14(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/8a6b26f9-550c-4c04-a89d-d0e4f1d7f87d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP15(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4207871b-8429-40fb-968f-9ef5a49bf66a/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP16(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/61074d16-d484-4376-94d8-f53b6c55d448/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP17(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/06bed4b4-097f-4d5c-a9cd-9f510619286b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP18(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f24c9f6e-a59f-46fc-b544-4d526636c70c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP19(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c621e162-265a-4871-8e10-c159a0d11fb5/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP20(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/09d9192a-6310-4813-b2da-34f1eff6f4e8/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP21(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/46934225-3fdb-49e4-b92b-6d7d31a2ea5b/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP22(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/f8bb115c-e99a-4cf1-90f6-dc813b0c1e2c/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP23(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Mystery-of-Dragon-Town-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c922fae0-1a70-44f5-b8c9-8e37d1923686/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white"> The Mystery of Dragon Town(จบ) EP24(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/c743632c-0512-4584-86b4-329399846cdb/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP1(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/59364700-bd1f-4189-b50a-819cf3930899/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP2(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/31eb4a01-0083-4cf3-b495-00910aaf63a7/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP3(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/6968ca48-d564-4893-83fa-2baa105ca1be/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP4(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/3b7eb9a1-f733-4b54-88ac-14ba9f075224/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP5(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/e17ae667-07aa-4c89-918a-31161915699f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP6(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/951afd4e-33a9-4b3e-8dba-070d6aa0e2a8/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP7(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/ebabc102-51b7-49c6-9a20-aa2f0b5c1715/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP8(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0798bfa0-dd2d-49ac-94a5-34639a5000e0/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP9(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0a342047-935c-492d-8a4e-8b68488fc23d/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP10(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/1227856c-3b1c-461b-b560-c118c99c2ba0/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP11(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/5ea2001f-74c6-4403-9426-5179d903a7ed/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP12(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/4c92f3b7-773b-4467-8674-12733082d4c5/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP13(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/0f4b368d-a661-421a-a64a-4932dd49e9b0/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP14(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/21a4a899-9f91-4d12-b99e-a714ed88d897/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP15(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/cc07c5a0-891c-47b7-b158-2cd66ed512a0/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP16(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/83632577-ea27-42cf-a79a-b2fdca7b8b52/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP17(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/dd069a3e-26e7-4418-b1b7-0b2ddb70b7e4/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP18(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/38999b85-85a8-47c9-8b6b-3c0a275e0bcc/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP19(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/760bc6c3-c8f4-4765-a316-cb0e90b1a8e4/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP20(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/af023d42-916a-442b-a63d-6845220fbb08/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP21(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/5d3018cf-d56c-4757-9cf4-9d349765175f/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP22(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/b7f85757-45f1-42c1-9f13-80bca547fb1e/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP23(SUB)
+</p></center>
+</div>
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 m-col-md-2" style="width:20%;height:300px;padding:5px">
+    <div class="movie-box">
+        <div class="movie-image">
+            <button class="btn btn-default btn-block btn-lg" type="button" 
+                style="background-size:cover;background-image:url(https://kserietv.co/wp-content/uploads/2025/04/The-Future-Lover-2025.webp);width:150px;height:250.45px;background-repeat:no-repeat;border:none;border-radius:2px;" 
+                onclick="window.location.href='https://playcdn.kserietv.com/026ec2a1-5525-4486-aa09-274e96fb5415/_'" autofocus="">
+            </button>
+        </div>
+    </div>
+    <center><p style="color:white">The Future Lover(จบ)EP24(SUB)
+</p></center>
+</div>
+     
+
+
+
+            
+
+<div class="col-lg-12 col-md-12 col-xs-12">
+	<div class="example" align="center">
+		<nav>
+			<ul class="pagination">
+				<li><a href="go:main-fw" aria-label="Previous"><span aria-hidden="true"><< หน้าแรก</span></a></li>		
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (31).html'>31</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (32).html'>32</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (33).html'>33</a></li>
+		 				 <li class="active"><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (34).html'><b>34</b></a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (35).html'>35</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (36).html'>36</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (37).html'>37</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (38).html'>38</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (39).html'>39</a></li>
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (40).html'>40</a></li>		
+										<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (41).html'>41</a></li>
+							<li><a href='https://udzaa2238.github.io/k-series-korea/k-series-korea (50).html'>หน้าสุดท้าย</a></li>										
+										
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+
+</div>
+</div>
+</div>  
+</div> 
+</div>
+</div>
+</div>
